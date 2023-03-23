@@ -1,40 +1,55 @@
 {
-    "miniprogramRoot": "dist/",
-    "projectname": "superMan",
-    "description": "superMan taro",
-    "appid": "touristappid",
-    "setting": {
-        "urlCheck": true,
-        "es6": false,
-        "enhance": false,
-        "compileHotReLoad": false,
-        "postcss": false,
-        "preloadBackgroundData": false,
-        "minified": false,
-        "newFeature": true,
-        "autoAudits": false,
-        "coverView": true,
-        "showShadowRootInWxmlPanel": false,
-        "scopeDataCheck": false,
-        "useCompilerModule": false,
-        "babelSetting": {
-            "ignore": [],
-            "disablePlugins": [],
-            "outputPath": ""
-        }
+  "miniprogramRoot": "dist/",
+  "projectname": "superMan",
+  "description": "superMan taro",
+  "appid": "wx0451a9effc623ed0",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": false,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": false,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
     },
-    "compileType": "miniprogram",
-    "simulatorType": "wechat",
-    "simulatorPluginLibVersion": {},
-    "condition": {},
-    "libVersion": "2.30.3",
-    "srcMiniprogramRoot": "dist/",
-    "packOptions": {
-        "ignore": [],
-        "include": []
-    },
-    "editorSetting": {
-        "tabIndent": "insertSpaces",
-        "tabSize": 4
-    }
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "showES6CompileOption": false
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "libVersion": "2.30.3",
+  "srcMiniprogramRoot": "dist/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
+  "condition": {}
 }
