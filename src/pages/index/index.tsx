@@ -19,9 +19,8 @@ const Index = () => {
           广州
           <AtIcon value='chevron-down' size='16' color='#a6a6a6'></AtIcon>
         </View>
-        <View className="search">
+        <View style={{width: '60%'}}>
           <AtSearchBar
-            style={{ height: '60px' }}
             actionName='搜索'
             value={''}
             onChange={() => { }}
