@@ -40,8 +40,10 @@
   },
   "compileType": "miniprogram",
   "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "libVersion": "2.30.3",
+  "simulatorPluginLibVersion": {
+    "wxext14566970e7e9f62": "2.27.3"
+  },
+  "libVersion": "2.30.2",
   "srcMiniprogramRoot": "dist/",
   "packOptions": {
     "ignore": [],

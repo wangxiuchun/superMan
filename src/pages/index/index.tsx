@@ -1,36 +1,23 @@
-import React, { useCallback } from "react";
-import { View, Text, Button, Image } from "@tarojs/components";
-import { AtIcon, AtSearchBar } from 'taro-ui';
+import React, { useState } from "react";
+import { View } from "@tarojs/components";
 import { useEnv, useNavigationBar, useModal, useToast } from "taro-hooks";
-import userIcon from '../../resource/home_user.png'
 
 import './index.scss';
-import Taro from "@tarojs/taro";
+import { Header } from "./components/Header";
+import { SwiperBar } from "./components/SwiperBar";
+import { ContentList } from "./components/ContentList";
+import MyContext from "../components/context";
 
 const Index = () => {
+  const [locationName, setLocationName] = useState('广州')
 
   return (
     <View className="wrapper">
-      <View className="home_header">
-        <View>
-          <Image className="userIcon" src={userIcon} />
-        </View>
-        <View className="location">
-          广州
-          <AtIcon value='chevron-down' size='16' color='#a6a6a6'></AtIcon>
-        </View>
-        <View style={{width: '60%'}}>
-          <AtSearchBar
-            actionName='搜索'
-            value={''}
-            onChange={() => { }}
-            onActionClick={() => { }}
-          />
-        </View>
-        <View className="more">
-          <AtIcon value='chevron-down' size='16' color='#a6a6a6'></AtIcon>
-        </View>
-      </View>
+      <MyContext.Provider value={{locationName, setLocationName}}>
+      <Header />
+      <SwiperBar />
+      <ContentList />
+      </MyContext.Provider>
     </View>
   );
 };

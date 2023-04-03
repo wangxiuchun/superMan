@@ -12,13 +12,8 @@ page {
 
 .home_header {
   height: 80px;
-  // padding: 8px 9px 9px;
-//   top: 23px;
-//   position: fixed;
   color: #a6a6a6;
-  // background-color: rgb(206, 190, 190);
   text-align: center;
-  // border: forestgreen solid 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,17 +26,14 @@ page {
 }
 
 .location {
-  width: 18%;
+  width: 15%;
   height: 60px;
-  // background-color: lawngreen;
-  align-items: center;
+  line-height: 60px;
 }
 
 .search {
-  width: 55%;
+  width: 60%;
   height: 60px;
-  margin-top: -10px;
-  // background-color: rgb(252, 227, 0);
 }
 
 // 去掉搜索框下方的横线
@@ -49,12 +41,111 @@ page {
   &::after {
     border: none;
   }
-  // border: #a6a6a6 solid 1px;
-  // border-radius: 2%;
+
+  padding: 0;
 }
 
 .more {
   width: 10%;
   height: 60px;
-  // background-color: rgb(0, 181, 252);
+  line-height: 60px;
+}
+
+.swiperBar {
+  height: 270px;
+
+  .swiperItem {
+    width: 100vw;
+  }
+}
+
+// tag and list
+.contentList {
+  padding-top: 12px;
+
+  // 顶部按钮
+  .top-btn {
+    width: calc(100vw - 28rpx);
+    height: 60px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  // 按钮滑到顶部
+  .fixed_top-btn {
+    width: calc(100vw - 28rpx);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    position: fixed;
+    background-color: rgb(238, 238, 238);
+  }
+
+  // 按钮到顶部后列表的位置
+  .fixed_list_wrapper {
+    margin-top: 80px;
+    // border: red solid 1px;
+  }
+
+  // 列表
+  .list_wrapper {
+    height: calc(100vh - 750rpx);
+    .list {
+      padding: 20px 25px 10px 0px;
+      height: 200px;
+      display: flex;
+      justify-content: flex-start;
+      border: #f1f0ec solid 1px;
+      border-radius: 2%;
+
+      .list-left {
+        height: 200px;
+        padding: 0 20px;
+        // border: aqua solid 1px;
+
+        .img {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      .list-right {
+        flex: 5;
+        // border: #d6c094 solid 1px;
+
+        .list-right-top {
+          width: calc(100vw - 160rpx);
+          height: 42px;
+          font-weight: bold;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          // border: #d5ec4d solid 1px;
+        }
+
+        .list-right-bottom {
+          height: 145px;
+          padding-left: 28px;
+          padding-bottom: 12px;
+          font-size: 24px;
+          color: #a6a6a6;
+          // border: #429b49 solid 1px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+
+          .location {
+            width: calc(100vw - 208rpx);
+            display: flex;
+            justify-content: space-between;
+          }
+
+        }
+      }
+    }
+  }
 }
